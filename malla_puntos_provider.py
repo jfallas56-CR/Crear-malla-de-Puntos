@@ -25,7 +25,7 @@ class MallaPuntosProvider(QgsProcessingProvider):
         return self.name()
 
     def icon(self):
-        icon_path = os.path.join(os.path.dirname(__file__), 'icons', 'icon.svg')
+        icon_path = os.path.join(os.path.dirname(__file__), 'icon.png')
         if os.path.exists(icon_path):
             return QIcon(icon_path)
         return super().icon()
