@@ -31,7 +31,7 @@ class MallaPuntosPlugin:
         self.toolbar.setObjectName('MallaPuntosToolbar')
         self.iface.mainWindow().addToolBar(self.toolbar)
 
-        icon_path = os.path.join(os.path.dirname(__file__), 'icon.svg')
+        icon_path = os.path.join(os.path.dirname(__file__), 'icon.png')
         icon = QIcon(icon_path)
 
         self.action = QAction(icon, 'Crear Malla de Puntos', self.iface.mainWindow())
