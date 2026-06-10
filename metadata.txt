@@ -2,14 +2,19 @@
 name=Crear Malla de Puntos: hexagonal o rectangular
 qgisMinimumVersion=3.28
 qgisMaximumVersion=4.99
-description=Genera mallas sistemáticas de puntos (hexagonal o rectangular) dentro de polígonos, con reporte HTML de métricas y Reporte de Calidad ISO 19157:2023.
+supportsQt6=True
+description=Advanced point grid generator for QGIS with hexagonal and rectangular patterns, Shapely ufunc, and ISO 19157:2023 reports.
 version=1.0.0
 author=Jorge Fallas
 email=jfallas56@gmail.com
+license=GPL-2.0-or-later
 
-about=Herramienta de Processing para QGIS que genera una malla sistemática de puntos
-    (hexagonal o rectangular) dentro de capas de polígonos.
-
+about=Advanced point grid generator for QGIS with hexagonal and rectangular patterns, global grid alignment (GR-01) for exact border-point detection, three density input methods (spacing, pts/ha, ha/point), four operation modes (Unified, Container, Islands, Individual), Shapely ufunc acceleration engine (up to 218x), optional Douglas-Peucker simplification, 3-way integrity management, hole elimination, exclusion layers, JSON class mapping, variable density per class, shared-border duplicate detection and cleanup, ISO 19157:2023 quality reports and reproducibility via _params.json.
+    
+    ── ESPAÑOL ──────────────────────────────────────────────────────────────
+    
+    Herramienta de Processing para QGIS que genera una malla sistemática de puntos (hexagonal o rectangular) dentro de capas de polígonos.
+    
     Características principales:
     - Malla hexagonal (recomendada) o rectangular
     - Tres formas de definir la densidad: Espaciado (m), Densidad (pts/ha) o Hectáreas/punto
@@ -26,16 +31,16 @@ about=Herramienta de Processing para QGIS que genera una malla sistemática de p
     - Salida en GeoPackage (.gpkg)
     - Compatible con QGIS 3.28+ y QGIS 4.0 (Qt5 y Qt6)
 
+category=Vector
+tags=malla, puntos, muestreo, inventario forestal, hexagonal, rectangular, grid, sampling, forestry, puntos sistematicos, iso 19157, shapely, densidad variable
+homepage=https://github.com/jfallas56-CR/Crear-malla-de-Puntos
 tracker=https://github.com/jfallas56-CR/Crear-malla-de-Puntos/issues
 repository=https://github.com/jfallas56-CR/Crear-malla-de-Puntos
-homepage=https://github.com/jfallas56-CR/Crear-malla-de-Puntos
-
+icon=icon.png
 hasProcessingProvider=yes
-tags=malla, puntos, muestreo, inventario forestal, hexagonal, rectangular, grid, sampling, forestry, puntos sistematicos, iso 19157, shapely, densidad variable
-category=Vector
-icon=icons/icon.svg
 experimental=False
 deprecated=False
+
 changelog=1.0.0 - Versión inicial pública
     - Malla hexagonal y rectangular
     - Motor de aceleración Shapely ufunc (hasta 218× más rápido)
