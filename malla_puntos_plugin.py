@@ -30,7 +30,6 @@ class MallaPuntosPlugin:
         self.toolbar = QToolBar('Malla de Puntos')
         self.toolbar.setObjectName('MallaPuntosToolbar')
         self.iface.mainWindow().addToolBar(self.toolbar)
-
         icon_path = os.path.join(os.path.dirname(__file__), 'icon.png')
         icon = QIcon(icon_path)
 

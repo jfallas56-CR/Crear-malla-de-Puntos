@@ -4,8 +4,8 @@
 Script  : Crear Malla de Puntos — Hexágonos y Rectángulos
 Archivo : malla_puntos_algorithm.py
 Autor   : Jorge Fallas (jfallas56@gmail.com)
-Versión : 2026-04-05
-QGIS    : >= 3.16 (Qt5) y 4.00–4.99 (Qt6)
+Versión : 1.0.1
+QGIS    : >= 3.28 (Qt5) y 4.00–4.99 (Qt6)
 Python  : >= 3.8
 
 Propósito:
@@ -849,7 +849,7 @@ class CrearMallaPuntos(QgsProcessingAlgorithm):
     ELIMINAR_SOBRANTES = 'ELIMINAR_SOBRANTES'
 
     # Versión del algoritmo — actualizar con cada cambio relevante
-    VERSION = '2026-05-04 v5z60'
+    VERSION = 'v1.0.1'
 
     GRID_TYPE_LABELS = ['Hexagonal', 'Rectangular']
     MODE_LABELS      = ['Procesar como Conjunto', 'Rellenar Polígonos Individualmente']
