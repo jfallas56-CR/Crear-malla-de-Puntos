@@ -2,7 +2,6 @@
 name=Crear Mallas de Puntos: Hexagonal o Rectangular
 qgisMinimumVersion=3.28
 qgisMaximumVersion=4.99
-supportsQt6=True
 description=Advanced point grid generator for QGIS with hexagonal and rectangular patterns, Shapely ufunc, and ISO 19157:2023 reports.
 version=1.0.1
 author=Jorge Fallas
@@ -33,7 +32,7 @@ about=Advanced point grid generator for QGIS with hexagonal and rectangular patt
 
 category=Vector
 tags=malla, puntos, muestreo, inventario forestal, hexagonal, rectangular, grid, sampling, forestry, puntos sistematicos, iso 19157, shapely, densidad variable
-homepage=https://github.com/jfallas56-CR/Crear-malla-de-Puntos
+homepage=https://github.com/jfallas56-CR/Crear-malla-de-Puntos#readme
 tracker=https://github.com/jfallas56-CR/Crear-malla-de-Puntos/issues
 repository=https://github.com/jfallas56-CR/Crear-malla-de-Puntos
 icon=icon.png
@@ -42,14 +41,12 @@ experimental=False
 deprecated=False
 
 changelog=1.0.1 (2026-06-10) — Correcciones de publicación:
-    - VERSION interna alineada a v1.0.1
-    - QGIS mínimo corregido a 3.28 en docstring del algoritmo
-    - CHANGELOG: simplificación documentada como desactivada por defecto
-    - icon.png convertido a PNG RGBA 64×64
-    - README: badges de versión añadidos; ruta de ícono corregida
-    1.0.0 - Versión inicial pública
+    - Calidad de código: 0 issues Flake8
+    - icon.png convertido a PNG RGB 64x64
+    - README: badges de versión añadidos
+    1.0.0 (2026-06-01) — Versión inicial pública:
     - Malla hexagonal y rectangular
-    - Motor de aceleración Shapely ufunc (hasta 218× más rápido)
+    - Motor de aceleración Shapely ufunc (hasta 218x más rápido)
     - Simplificación Douglas-Peucker opcional (desactivada por defecto)
     - Reporte HTML con ISO 19157:2023
     - Tres métodos de entrada: Espaciado, Densidad, Ha/punto
@@ -57,6 +54,6 @@ changelog=1.0.1 (2026-06-10) — Correcciones de publicación:
     - Capa de exclusión con búfer y transformación automática de SRC
     - Mapeo de clases JSON y densidad variable por clase
     - Detección y limpieza de duplicados en bordes compartidos
-    - Validación de SRC geográfico — cancela con error crítico
-    - Validación de campo ID: NULL y duplicados detectados antes de iniciar
+    - Validación de SRC geográfico: cancela con error critico
+    - Validacion de campo ID: NULL y duplicados detectados antes de iniciar
     - Compatible con QGIS 3.28 LTR, 3.44 LTR y 4.0
